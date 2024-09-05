@@ -1,9 +1,11 @@
 ---
-    name: 09. Trigger when Push
+    name: 10. Trigger when Push all branches except test
     on: 
       push:
         branches:
-          - 'test-**'
+          - '*'
+          - '!master'
+          - '!test-**'
     jobs:
       build:
         runs-on: ubuntu-latest

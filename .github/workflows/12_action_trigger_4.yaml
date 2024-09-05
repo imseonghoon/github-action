@@ -1,9 +1,10 @@
 ---
-    name: 09. Trigger when Push
+    name: 12. Trigger with Tags
     on: 
       push:
-        branches:
-          - 'test-**'
+        tags:
+        - v1.*
+    
     jobs:
       build:
         runs-on: ubuntu-latest
@@ -13,7 +14,7 @@
         - name: Build project
           run: |
             echo "Build Project"
-            echo "Branch: $GITHUB_REF"
+            echo "GitHub REF: $GITHUB_REF"
         - name: Run tests
           run: |
             echo "Run Test"

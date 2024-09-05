@@ -1,9 +1,12 @@
 ---
-    name: 09. Trigger when Push
+    name: 11. Trigger when Push without Workflow files
     on: 
       push:
         branches:
-          - 'test-**'
+        - master
+        paths-ignore:
+        - 'README.md'
+        - '.github/workflows/**'
     jobs:
       build:
         runs-on: ubuntu-latest
@@ -13,7 +16,6 @@
         - name: Build project
           run: |
             echo "Build Project"
-            echo "Branch: $GITHUB_REF"
         - name: Run tests
           run: |
             echo "Run Test"
