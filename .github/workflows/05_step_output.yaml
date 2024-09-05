@@ -1,5 +1,5 @@
 ---
-    name: Step Output Test
+    name: 05. Step Output Test
     on: workflow_dispatch
     jobs:
       test-job:

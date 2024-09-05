@@ -1,5 +1,5 @@
 ---
-    name: Variables Test 3
+    name: 04. Variables Test 3
     on: workflow_dispatch
     jobs:
       build:

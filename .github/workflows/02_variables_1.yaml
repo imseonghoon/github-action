@@ -1,5 +1,5 @@
 ---
-    name: Variables Test 1
+    name: 02. Variables Test 1
     on: workflow_dispatch
     
     env:

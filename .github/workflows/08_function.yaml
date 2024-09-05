@@ -1,5 +1,5 @@
 ---
-    name: Function Test
+    name: 08. Function Test
     on: 
       issues:
         types: [opened, edited, labeled, unlabeled]
